@@ -1,0 +1,43 @@
+@page
+@model newproject.Pages.Home
+@{
+    ViewData["Title"] = "Titulo de pagina cambiado";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <article>
+        <img src="https://www.google.com/imgres?q=aside%2Farticle&imgurl=https%3A%2F%2Fi.sstatic.net%2FN1NmR.gif&imgrefurl=https%3A%2F%2Fstackoverflow.com%2Fquestions%2F4781077%2Fhtml5-best-practices-section-header-aside-article-elements&docid=FZ9ETejbeLbAvM&tbnid=ME1VNUr9_ErSzM&vet=12ahUKEwjui_nZ_J6OAxU1pZUCHc3yI9IQM3oECGgQAA..i&w=540&h=270&hcb=2&ved=2ahUKEwjui_nZ_J6OAxU1pZUCHc3yI9IQM3oECGgQAA" alt="no hay foto">
+        <h2>seccion 1</h2>
+        <div class="card shadow-sm rounded-4 mb-4" style="max-width: 500px;">
+            <div class="card-body">
+                <h5 class="card-title">Secundario Técnico en Informática</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Escuela Técnica N°X • 2021 – Actualidad</h6>
+                <p class="card-text">Especialización en redes, programación y bases de datos.</p>
+            </div>
+        </div>
+        <h2>seccion 2</h2>
+        <div class="card shadow-sm rounded-4 mb-4" style="max-width: 500px;">
+            <video>
+                <source src="https://www.youtube.com/watch?v=5emrRVPqB7w&themeRefresh=1"type="video/mp4">
+                </video>
+            <div class="card-body">
+                <h5 class="card-title">hmtl 20%</h5>
+                <h6 class="card-subtitle mb-2 text-muted">js 15%</h6>
+                <p class="card-text">C# 50%</p>
+                <p class="card-text">BD 50%</p>
+            </div>
+        </div>
+        <form method="post">
+            
+            <button type="submit">Cerrar sesion</button>
+        </form>
+
+        <marquee>This text will scroll across the screen!</marquee>
+
+    </article>
+    <aside class="bg-dark h-100 justify-content-center align-items-center">
+        <p>aca esta el aside</p>
+    </aside>
+</div>

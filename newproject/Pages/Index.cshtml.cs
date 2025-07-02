@@ -7,7 +7,7 @@ public class IndexModel : PageModel
 {
     private readonly ILogger<IndexModel> _logger;
     public string nombreUsuario { get; set; }
-    public string apellido { get; set; }
+    public string contra { get; set; }
 
     public IndexModel(ILogger<IndexModel> logger)
     {
@@ -19,9 +19,10 @@ public class IndexModel : PageModel
 
     }
 
-    public void OnPost(string nombreUsuario, string apellido)
+    public IActionResult OnPost(string nombreUsuario, string contra)
     {
         this.nombreUsuario = nombreUsuario;
-        this.apellido = apellido;
+        this.contra = contra;
+        return RedirectToPage("/Home");
     }
 }
